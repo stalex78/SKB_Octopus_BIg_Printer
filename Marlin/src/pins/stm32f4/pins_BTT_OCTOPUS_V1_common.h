@@ -185,7 +185,7 @@
 //
 // Steppers
 //
-#define X_STEP_PIN                          PF13  // MOTOR 0
+#define X_STEP_PIN                           PF13  // MOTOR 0
 #define X_DIR_PIN                           PF12
 #define X_ENABLE_PIN                        PF14
 #ifndef X_CS_PIN
