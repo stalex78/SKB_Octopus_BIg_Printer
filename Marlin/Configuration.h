@@ -1188,10 +1188,11 @@
  * Default Axis Steps Per Unit (linear=steps/mm, rotational=steps/°)
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
+ *                                      X-51200  Y-51200 Z-3200 E-200
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT \
   {                                 \
-    80, 80, 400, 400, 500           \
+    326, 326, 800, 320, 200         \
   }
 
 /**
@@ -1220,7 +1221,7 @@
  */
 #define DEFAULT_MAX_ACCELERATION \
   {                              \
-    3000, 3000, 100,100, 10000       \
+    3000, 3000, 100, 100, 10000  \
   }
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
@@ -1848,7 +1849,7 @@
 #endif
 
 #if EITHER(MIN_SOFTWARE_ENDSTOPS, MAX_SOFTWARE_ENDSTOPS)
-//#define SOFT_ENDSTOPS_MENU_ITEM  // Enable/Disable software endstops from the LCD
+#define SOFT_ENDSTOPS_MENU_ITEM // Enable/Disable software endstops from the LCD
 #endif
 
 /**
@@ -2184,8 +2185,8 @@
 #endif
 
 // Homing speeds (linear=mm/min, rotational=°/min)
-#define HOMING_FEEDRATE_MM_M       \
-  {                                \
+#define HOMING_FEEDRATE_MM_M                 \
+  {                                          \
     (50 * 60), (50 * 60), (4 * 60), (4 * 60) \
   }
 
