@@ -1188,11 +1188,12 @@
  * Default Axis Steps Per Unit (linear=steps/mm, rotational=steps/°)
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
- *                                      X-51200  Y-51200 Z-3200 E-200
+ *                                      X-3200  Y-3200 Z-3200 E-200
+ * 3260 - Для 51200
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT \
   {                                 \
-    3260, 3260, 8000, 3200, 1000         \
+    204, 204, 8000, 3200, 1000         \
   }
 
 /**
