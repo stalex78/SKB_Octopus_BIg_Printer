@@ -1050,7 +1050,7 @@
 
 // @section homing
 
-#define DIAG_PINS_REMOVED
+
 // Specify here all the endstop connectors that are connected to any endstop or probe.
 // Almost all printers will be using one per axis. Probes will use one or more of the
 // extra connectors. Leave undefined any used for non-endstop and non-probe purposes.

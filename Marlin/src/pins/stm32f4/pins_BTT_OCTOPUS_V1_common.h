@@ -25,6 +25,7 @@
 
 #define HAS_OTG_USB_HOST_SUPPORT                  // USB Flash Drive support
 #define USES_DIAG_JUMPERS
+#define DIAG_PINS_REMOVED
 
 // Onboard I2C EEPROM
 #define I2C_EEPROM
