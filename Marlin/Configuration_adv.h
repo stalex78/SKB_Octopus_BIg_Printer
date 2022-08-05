@@ -1049,16 +1049,16 @@
  * The Deactive Time can be overridden with M18 and M84. Set to 0 for No Timeout.
  */
 #define DEFAULT_STEPPER_DEACTIVE_TIME 120
-#define DISABLE_INACTIVE_X true
-#define DISABLE_INACTIVE_Y true
-#define DISABLE_INACTIVE_Z true // Set 'false' if the nozzle could fall onto your printed part!
-#define DISABLE_INACTIVE_I true
+#define DISABLE_INACTIVE_X false
+#define DISABLE_INACTIVE_Y false
+#define DISABLE_INACTIVE_Z false // Set 'false' if the nozzle could fall onto your printed part!
+#define DISABLE_INACTIVE_I false
 #define DISABLE_INACTIVE_J true
 #define DISABLE_INACTIVE_K true
 #define DISABLE_INACTIVE_U true
 #define DISABLE_INACTIVE_V true
 #define DISABLE_INACTIVE_W true
-#define DISABLE_INACTIVE_E true
+#define DISABLE_INACTIVE_E false
 
 // Default Minimum Feedrates for printing and travel moves
 #define DEFAULT_MINIMUMFEEDRATE 0.0   // (mm/s. °/s for rotational-only moves) Minimum feedrate. Set with M205 S.
@@ -1293,7 +1293,7 @@
 #if HAS_MANUAL_MOVE_MENU
 #define MANUAL_FEEDRATE              \
   {                                  \
-    10000, 10000, 500, 5000, 500 \
+    10000, 10000, 200, 5000, 500 \
   }                            // (mm/min) Feedrates for manual moves along X, Y, Z, E from panel
 #define FINE_MANUAL_MOVE 0.025 // (mm) Smallest manual move (< 0.1mm) applying to Z on most machines
 #if IS_ULTIPANEL
@@ -1482,7 +1482,7 @@
 
 #define SD_PROCEDURE_DEPTH 1 // Increase if you need more nested M32 calls
 
-#define SD_FINISHED_STEPPERRELEASE true  // Disable steppers when SD Print is finished
+#define SD_FINISHED_STEPPERRELEASE false  // Disable steppers when SD Print is finished
 #define SD_FINISHED_RELEASECOMMAND "M84" // Use "M84XYE" to keep Z enabled so your bed stays in place
 
 // Reverse SD sort to show "more recent" files first, according to the card's FAT.
@@ -2323,7 +2323,7 @@
  *
  * Override the default value based on the driver type set in Configuration.h.
  */
-//#define MAXIMUM_STEPPER_RATE 250000
+#define MAXIMUM_STEPPER_RATE 200000
 
 // @section temperature
 

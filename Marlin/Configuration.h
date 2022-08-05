@@ -1194,7 +1194,7 @@
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT \
   {                                 \
-    226, 226, 14900, 3200, 1000         \
+    226, 226, 8000, 3200, 1000         \
   }
 
 /**
@@ -1204,7 +1204,7 @@
  */
 #define DEFAULT_MAX_FEEDRATE \
   {                          \
-    10000, 10000, 500, 5000, 500       \
+    10000, 10000, 300, 5000, 500       \
   }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
@@ -1731,7 +1731,7 @@
 // @section extruder
 
 #define DISABLE_E false           // Disable the extruder when not stepping
-#define DISABLE_INACTIVE_EXTRUDER // Keep only the active extruder enabled
+//#define DISABLE_INACTIVE_EXTRUDER // Keep only the active extruder enabled
 
 // @section machine
 
