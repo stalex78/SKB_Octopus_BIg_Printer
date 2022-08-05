@@ -158,9 +158,9 @@
 #define X_DRIVER_TYPE A4988
 #define Y_DRIVER_TYPE A4988
 #define Z_DRIVER_TYPE A4988
-#define X2_DRIVER_TYPE A4988
+//#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
-#define Z2_DRIVER_TYPE A4988
+//#define Z2_DRIVER_TYPE A4988
 //#define Z3_DRIVER_TYPE A4988
 //#define Z4_DRIVER_TYPE A4988
 #define I_DRIVER_TYPE A4988
@@ -1194,7 +1194,7 @@
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT \
   {                                 \
-    226, 226, 8000, 3200, 1000         \
+    228, 228, 8450, 3200, 1000         \
   }
 
 /**
