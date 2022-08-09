@@ -193,53 +193,53 @@
   #define X_CS_PIN                          PC4
 #endif
 
-#define X2_STEP_PIN                          PG0   // MOTOR 1
-#define X2_DIR_PIN                           PG1
-#define X2_ENABLE_PIN                        PF15
-#ifndef X2_CS_PIN
-  #define X2_CS_PIN                          PD11
-#endif
-
-#define Y_STEP_PIN                          PF11  // MOTOR 2
-#define Y_DIR_PIN                           PG3
-#define Y_ENABLE_PIN                        PG5
+#define Y_STEP_PIN                          PG0   // MOTOR 1
+#define Y_DIR_PIN                           PG1
+#define Y_ENABLE_PIN                        PF15
 #ifndef Y_CS_PIN
-  #define Y_CS_PIN                          PC6
+  #define Y_CS_PIN                          PD11
 #endif
 
-#define Z_STEP_PIN                         PG4   // MOTOR 3
-#define Z_DIR_PIN                          PC1
-#define Z_ENABLE_PIN                       PA0
+#define Z_STEP_PIN                          PF11  // MOTOR 2
+#define Z_DIR_PIN                           PG3
+#define Z_ENABLE_PIN                        PG5
 #ifndef Z_CS_PIN
+  #define Z_CS_PIN                          PC6
+#endif
+
+#define I_STEP_PIN                         PG4   // MOTOR 3
+#define I_DIR_PIN                          PC1
+#define I_ENABLE_PIN                       PA0
+#ifndef I_CS_PIN
   #define Z_CS_PIN                         PC7
 #endif
 
-#define Z2_STEP_PIN                         PF9   // MOTOR 4
-#define Z2_DIR_PIN                          PF10
-#define Z2_ENABLE_PIN                       PG2
-#ifndef Z2_CS_PIN
-  #define Z2_CS_PIN                         PF2
-#endif
-
-#define I_STEP_PIN                         PC13  // MOTOR 5
-#define I_DIR_PIN                          PF0
-#define I_ENABLE_PIN                       PF1
-#ifndef I_CS_PIN
-  #define I_CS_PIN                         PE4
-#endif
-
-#define E0_STEP_PIN                         PE2   // MOTOR 6
-#define E0_DIR_PIN                          PE3
-#define E0_ENABLE_PIN                       PD4
+#define E0_STEP_PIN                         PF9   // MOTOR 4
+#define E0_DIR_PIN                          PF10
+#define E0_ENABLE_PIN                       PG2
 #ifndef E0_CS_PIN
-  #define E0_CS_PIN                         PE1
+  #define E0_CS_PIN                         PF2
 #endif
 
-#define E1_STEP_PIN                         PE6   // MOTOR 7
-#define E1_DIR_PIN                          PA14
-#define E1_ENABLE_PIN                       PE0
+#define E1_STEP_PIN                         PC13  // MOTOR 5
+#define E1_DIR_PIN                          PF0
+#define E1_ENABLE_PIN                       PF1
 #ifndef E1_CS_PIN
-  #define E1_CS_PIN                         PD3
+  #define E1_CS_PIN                         PE4
+#endif
+
+#define E2_STEP_PIN                         PE2   // MOTOR 6
+#define E2_DIR_PIN                          PE3
+#define E2_ENABLE_PIN                       PD4
+#ifndef E2_CS_PIN
+  #define E2_CS_PIN                         PE1
+#endif
+
+#define E3_STEP_PIN                         PE6   // MOTOR 7
+#define E3_DIR_PIN                          PA14
+#define E3_ENABLE_PIN                       PE0
+#ifndef E3_CS_PIN
+  #define E3_CS_PIN                         PD3
 #endif
 
 //
