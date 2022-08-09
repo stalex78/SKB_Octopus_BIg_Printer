@@ -211,7 +211,7 @@
 #define I_DIR_PIN                          PC1
 #define I_ENABLE_PIN                       PA0
 #ifndef I_CS_PIN
-  #define Z_CS_PIN                         PC7
+  #define I_CS_PIN                         PC7
 #endif
 
 #define E0_STEP_PIN                         PF9   // MOTOR 4
