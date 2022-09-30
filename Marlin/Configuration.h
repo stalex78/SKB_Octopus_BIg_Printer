@@ -1194,8 +1194,8 @@
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT \
   {                                 \
-    228, 227, 8450, 3200, 600       \
-  }
+    228, 227, 8450, 320, 1200    \
+    } 
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1204,7 +1204,7 @@
  */
 #define DEFAULT_MAX_FEEDRATE \
   {                          \
-    10000, 10000, 300, 5000, 3       \
+    150, 150, 3, 10, 3       \
   }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
@@ -1223,7 +1223,7 @@
  */
 #define DEFAULT_MAX_ACCELERATION \
   {                              \
-    300, 300, 100, 1000, 3000  \
+    300, 300, 100, 300, 300  \
   }
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2

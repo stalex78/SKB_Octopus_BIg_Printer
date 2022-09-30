@@ -1293,7 +1293,7 @@
 #if HAS_MANUAL_MOVE_MENU
 #define MANUAL_FEEDRATE              \
   {                                  \
-    10000, 10000, 200, 5000, 180 \
+    10000, 10000, 200, 10000, 180 \
   }                            // (mm/min) Feedrates for manual moves along X, Y, Z, E from panel
 #define FINE_MANUAL_MOVE 0.025 // (mm) Smallest manual move (< 0.1mm) applying to Z on most machines
 #if IS_ULTIPANEL
