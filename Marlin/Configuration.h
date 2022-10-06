@@ -1204,7 +1204,7 @@
  */
 #define DEFAULT_MAX_FEEDRATE \
   {                          \
-    150, 150, 3, 10, 3       \
+    150, 150, 10, 20, 3      \
   }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
@@ -1223,7 +1223,7 @@
  */
 #define DEFAULT_MAX_ACCELERATION \
   {                              \
-    300, 300, 100, 300, 300  \
+    300, 300, 300, 300, 300  \
   }
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
@@ -1738,7 +1738,7 @@
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR true
 #define INVERT_Y_DIR true
-#define INVERT_Z_DIR true
+#define INVERT_Z_DIR false
 #define INVERT_I_DIR false
 //#define INVERT_J_DIR false
 //#define INVERT_K_DIR false
