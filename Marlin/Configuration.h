@@ -563,7 +563,7 @@
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
 #define DUMMY_THERMISTOR_998_VALUE 25
-#define DUMMY_THERMISTOR_999_VALUE 100
+#define DUMMY_THERMISTOR_999_VALUE 195
 
 // Resistor values when using MAX31865 sensors (-5) on TEMP_SENSOR_0 / 1
 //#define MAX31865_SENSOR_OHMS_0      100   // (Ω) Typically 100 or 1000 (PT100 or PT1000)
@@ -1204,7 +1204,7 @@
  */
 #define DEFAULT_MAX_FEEDRATE \
   {                          \
-    150, 150, 10, 20, 3      \
+    150, 150, 10, 10, 3      \
   }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
@@ -1790,8 +1790,8 @@
 // @section machine
 
 // The size of the printable area
-#define X_BED_SIZE 3710
-#define Y_BED_SIZE 1710
+#define X_BED_SIZE 3670
+#define Y_BED_SIZE 1672
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1799,9 +1799,9 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 1700
+#define Z_MAX_POS 1560
 #define I_MIN_POS 0
-#define I_MAX_POS 777
+#define I_MAX_POS 600
 //#define J_MIN_POS 0
 //#define J_MAX_POS 50
 //#define K_MIN_POS 0
@@ -2416,7 +2416,7 @@
 //#define NOZZLE_CLEAN_NO_Y
 
 // Require a minimum hotend temperature for cleaning
-#define NOZZLE_CLEAN_MIN_TEMP 170
+#define NOZZLE_CLEAN_MIN_TEMP 10
 //#define NOZZLE_CLEAN_HEATUP       // Heat up the nozzle instead of skipping wipe
 
 // Explicit wipe G-code script applies to a G12 with no arguments.
